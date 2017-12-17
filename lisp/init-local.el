@@ -15,14 +15,13 @@
 (require 'init-helm)
 ;; 安装go
 (require 'init-go-mode)
-;; 安装ecb, ecb2.50暂时不可用，报错，未定位
-;; 但安装后重启就可以用了?
-;;(require 'init-ecb)
+;; 安装ecb
+(require 'init-ecb)
 
 ;; 设置UTF-8
 (define-coding-system-alias 'UTF-8 'utf-8)
 
-;; 中文路径
+;; 右键打开支持中文路径
 (setq file-name-coding-system 'chinese-gbk)
 (setq locale-coding-system 'chinese-gbk)
 
