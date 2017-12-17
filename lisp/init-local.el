@@ -5,13 +5,22 @@
 ;;(setq split-height-threshold nil)
 ;;(setq split-width-threshold 0)
 
+;;; 不再设置主题，使用默认
 ;;;(color-theme-sanityinc-tomorrow-night)
 
 ;;设置字体
 (set-default-font "-outline-YaHei Consolas Hybrid-normal-normal-normal-sans-17-*-*-*-p-*-iso8859-1")
 
-;;新增helm
-;;;(load "~/emacs.d/my-helm.el")
+;; windows下安装helm
+(require 'init-helm)
+;; 安装go
+(require 'init-go-mode)
+;; 安装ecb, ecb2.50暂时不可用，报错，未定位
+;; 但安装后重启就可以用了?
+;;(require 'init-ecb)
+
+;; 设置UTF-8
+(define-coding-system-alias 'UTF-8 'utf-8)
 
 ;; 中文路径
 (setq file-name-coding-system 'chinese-gbk)
