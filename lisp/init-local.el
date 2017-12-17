@@ -8,6 +8,12 @@
 ;;; 不再设置主题，使用默认
 ;;;(color-theme-sanityinc-tomorrow-night)
 
+;;设置路径
+(setenv "PATH"
+        (concat "D:/Program Files/python36/Scripts/;D:/Program Files/python36/;"
+                (getenv "PATH")))
+
+
 ;;设置字体
 (set-default-font "-outline-YaHei Consolas Hybrid-normal-normal-normal-sans-17-*-*-*-p-*-iso8859-1")
 
