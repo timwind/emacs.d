@@ -51,8 +51,11 @@
 
 ;;;; 自动启动ecb，并且不显示每日提示
 (setq ecb-auto-activate t ecb-tip-of-the-day nil)
-(global-set-key (kbd "<f8>") 'ecb-hide-ecb-windows)
-(global-set-key (kbd "<f9>") 'ecb-show-ecb-windows)
+;;(global-set-key (kbd "<f8>") 'ecb-hide-ecb-windows)
+;;(global-set-key (kbd "<f9>") 'ecb-show-ecb-windows)
+
+;; 开启菜单栏
+(menu-bar-mode t)
 
 (provide 'init-local)
 
