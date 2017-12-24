@@ -45,7 +45,14 @@
 ;; 自动扩充时识别大小写
 (setq company-dabbrev-downcase nil)
 
+;; 其他设置
+;;(autoload 'visual-basic-mode "visual-basic-mode" "Visual Basic mode." t)
+;;(setq auto-mode-alist (append '(("\\.log$" .textile-mode)) auto-mode-alist))
 
+;;;; 自动启动ecb，并且不显示每日提示
+(setq ecb-auto-activate t ecb-tip-of-the-day nil)
+(global-set-key (kbd "<f8>") 'ecb-hide-ecb-windows)
+(global-set-key (kbd "<f9>") 'ecb-show-ecb-windows)
 
 (provide 'init-local)
 
