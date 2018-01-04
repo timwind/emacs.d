@@ -31,7 +31,4 @@
   (reapply-themes))
 
 
-(maybe-require-package 'dimmer)
-
-
 (provide 'init-themes)
